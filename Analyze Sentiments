@@ -1,0 +1,49 @@
+1)
+{
+  "kind": "SentimentAnalysis",
+  "parameters": {
+    "modelVersion": "latest"
+  },
+  "analysisInput": {
+    "documents": [
+      {
+        "id": "1",
+        "language": "en",
+        "text": "Good morning!"
+      }
+    ]
+  }
+}
+
+2){
+  "kind": "SentimentAnalysisResults",
+  "results": {
+    "documents": [
+      {
+        "id": "1",
+        "sentiment": "positive",
+        "confidenceScores": {
+          "positive": 0.89,
+          "neutral": 0.1,
+          "negative": 0.01
+        },
+        "sentences": [
+          {
+            "sentiment": "positive",
+            "confidenceScores": {
+              "positive": 0.89,
+              "neutral": 0.1,
+              "negative": 0.01
+            },
+            "offset": 0,
+            "length": 13,
+            "text": "Good morning!"
+          }
+        ],
+        "warnings": []
+      }
+    ],
+    "errors": [],
+    "modelVersion": "2022-11-01"
+  }
+}
