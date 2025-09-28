@@ -1,0 +1,93 @@
+1)
+{
+    "kind": "LanguageDetection",
+    "parameters": {
+        "modelVersion": "latest"
+    },
+    "analysisInput":{
+        "documents":[
+              {
+                "id": "1",
+                "text": "Hello world",
+                "countryHint": "US"
+              },
+              {
+                "id": "2",
+                "text": "Bonjour tout le monde"
+              }
+        ]
+    }
+}
+
+2)
+{   "kind": "LanguageDetectionResults",
+    "results": {
+        "documents": [
+          {
+            "detectedLanguage": {
+              "confidenceScore": 1,
+              "iso6391Name": "en",
+              "name": "English"
+            },
+            "id": "1",
+            "warnings": []
+
+},
+          {
+            "detectedLanguage": {
+              "confidenceScore": 1,
+              "iso6391Name": "fr",
+              "name": "French"
+            },
+            "id": "2",
+            "warnings": []
+          }
+        ],
+        "errors": [],
+        "modelVersion": "2022-10-01"
+    }
+}
+
+3)
+{
+  "documents": [
+    {
+      "id": "1",
+      "text": "Hello, I would like to take a class at your University. ¿Se ofrecen clases en español? Es mi primera lengua y más fácil para escribir. Que diriez-vous des cours en français?"
+    }
+  ]
+}
+
+4)
+{
+    "documents": [
+        {
+            "id": "1",
+            "detectedLanguage": {
+                "name": "Spanish",
+                "iso6391Name": "es",
+                "confidenceScore": 0.9375
+            },
+            "warnings": []
+        }
+    ],
+    "errors": [],
+    "modelVersion": "2022-10-01"
+}
+
+5)
+{
+    "documents": [
+        {
+            "id": "1",
+            "detectedLanguage": {
+                "name": "(Unknown)",
+                "iso6391Name": "(Unknown)",
+                "confidenceScore": 0.0
+            },
+            "warnings": []
+        }
+    ],
+    "errors": [],
+    "modelVersion": "2022-10-01"
+}
