@@ -1,0 +1,51 @@
+1)
+{
+    "kind": "KeyPhraseExtraction",
+    "parameters": {
+        "modelVersion": "latest"
+    },
+    "analysisInput":{
+        "documents":[
+            {
+              "id": "1",
+              "language": "en",
+              "text": "You must be the change you wish 
+                       to see in the world."
+            },
+            {
+              "id": "2",
+              "language": "en",
+              "text": "The journey of a thousand miles 
+                       begins with a single step."
+            }
+        ]
+    }
+}
+
+2)
+{
+    "kind": "KeyPhraseExtractionResults",
+    "results": {
+    "documents": [   
+        {
+         "id": "1",
+         "keyPhrases": [
+           "change",
+           "world"
+         ],
+         "warnings": []
+       },
+       {
+         "id": "2",
+         "keyPhrases": [
+           "miles",
+           "single step",
+           "journey"
+         ],
+         "warnings": []
+       }
+],
+    "errors": [],
+    "modelVersion": "2021-06-01"
+    }
+}
